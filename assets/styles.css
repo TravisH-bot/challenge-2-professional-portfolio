@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+:root {
+}
+
+/* Navbar formatting */
 nav {
   display: flex;
   justify-content: space-between;
@@ -15,15 +19,10 @@ nav {
   padding: 0;
 }
 
-.nav-link a {
+/* .name {
   display: inline-block;
   color: #238637;
-}
-
-.name {
-  display: inline-block;
-  color: #238637;
-}
+} */
 
 .nav-link {
   display: inline-block;
@@ -31,28 +30,123 @@ nav {
   padding: 0px 25px;
   text-decoration: none;
 }
+
+.nav-link a {
+  display: inline-block;
+  color: #238637;
+  text-decoration: none;
+}
+
 .name {
   display: flex;
   text-align: center;
   padding: 0px 25px;
+}
+
+.name a {
+  color: #238637;
   text-decoration: none;
 }
 
+.subtitle {
+  background-color: gray;
+  text-align: end;
+  margin-bottom: 5px;
+  line-height: 200px;
+}
+
+/* Formatting the main content */
+
 main {
+}
+
+.flexbox-container {
+  display: flex;
+  background-color: gray;
+  margin: 0 150px;
+}
+
+.flexbox-item {
+  background-color: blue;
+  color: white;
+  margin: 5px;
+  line-height: 25px;
+  font-size: 16px;
+  border-right: white 3px;
+}
+
+.flexbox-item-work {
   display: flex;
   flex-wrap: wrap;
+  background-color: lightblue;
+  color: white;
+  margin: 5px;
+  line-height: 25px;
+  font-size: 16px;
 }
 
-aside {
-  flex-direction: column;
-  flex: 1;
-  background-color: #fff;
-  padding: 20px;
+.project-main {
+  background: url(https://images.unsplash.com/photo-1534972195531-d756b9bfa9f2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fGNvZGV8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex: 1 4 700px;
+  width: 200px;
+  height: 700px;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid black;
+  background-color: red;
+  padding: 5px;
+  margin: 5px 5px;
 }
 
-section {
-  flex-direction: column;
-  flex: 3;
-  background-color: #fff;
-  padding: 20px;
+.project-side {
+  display: flex;
+  flex: 1 1 500px;
+  width: 200px;
+  height: 200px;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: green;
+
+  padding: 5px;
+  margin: 5px 5px;
+}
+
+.flexbox-item-1 {
+  padding-right: 5px;
+  flex: 1 1;
+  font-size: 66px;
+  border-right: white 3px;
+}
+.flexbox-item-1 h2 {
+  display: flex;
+  align-items: flex-end;
+  padding-right: 5px;
+  flex-wrap: wrap;
+  font-size: 66px;
+  border-right: white 3px;
+}
+
+.flexbox-item-2 {
+  text-align: left;
+  padding-left: 5px;
+  flex: 3 1;
+  border-right: white 3px;
+}
+
+.flexbox-item-2 ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style-type: none;
+  padding-right: 5px;
+}
+
+.flexbox-item-2 a {
+  color: white;
+  text-decoration: none;
 }

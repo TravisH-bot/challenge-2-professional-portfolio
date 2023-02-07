@@ -14,33 +14,65 @@
           <li class="name"><a href="#">Travis Hackbarth</a></li>
         </ul>
         <ul class="nav-ul">
-          <li class="nav-link"><a href="#">About Me</a></li>
-          <li class="nav-link"><a href="#">Work</a></li>
-          <li class="nav-link"><a href="#">Contact Me</a></li>
-          <li class="nav-link"><a href="#">Resume</a></li>
+          <li class="nav-link"><a href="#about-me">About Me</a></li>
+          <li class="nav-link"><a href="#work">Work</a></li>
+          <li class="nav-link"><a href="#contact-me">Contact Me</a></li>
+          <li class="nav-link">
+            <a href="path_to_file" download="proposed_file_name">Resume</a>
+          </li>
         </ul>
       </nav>
     </header>
 
-    <main>
-      <aside>
-        <div class="about-me">
-          <h2>About Me</h2>
-        </div>
-        <div class="about-me">
-          <h2>Work</h2>
-        </div>
-        <div class="about-me">
-          <h2>Contact Me</h2>
-        </div>
-      </aside>
+    <section class="subtitle">
+      <h1>My Portfolio</h1>
+    </section>
 
-      <section><h3>Project 1</h3></section>
-      <section><h3>Project 2</h3></section>
-      <section><h3>Project 3</h3></section>
-      <section><h3>Project 4</h3></section>
-      <section><h3>Project 5</h3></section>
+    <main>
+      <section class="flexbox-container">
+        <section id="about-me" class="flexbox-item flexbox-item-1">
+          <h2>About Me</h2>
+        </section>
+        <section class="flexbox-item flexbox-item-2">
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio
+            at voluptates maxime voluptas id facere aliquid quidem reiciendis
+            veniam veritatis iusto molestias praesentium culpa sint non unde
+            consequatur, quia earum ullam fugiat consequuntur est quibusdam
+            eveniet pariatur!
+          </p>
+        </section>
+      </section>
+
+      <section class="flexbox-container">
+        <section id="work" class="flexbox-item flexbox-item-1">
+          <h2>Work</h2>
+        </section>
+
+        <section class="flexbox-item-work flexbox-item-2">
+          <section class="project-main">1</section>
+          <section class="project-side">2</section>
+          <section class="project-side">3</section>
+          <section class="project-side">4</section>
+          <section class="project-side">5</section>
+        </section>
+      </section>
+
+      <section class="flexbox-container">
+        <section id="contact-me" class="flexbox-item flexbox-item-1">
+          <h2>Contact Me</h2>
+        </section>
+
+        <section class="flexbox-item flexbox-item-2">
+          <ul>
+            <li><a href="#">Phone Number</a></li>
+            <li><a href="#">Email</a></li>
+            <li><a href="#">GitHub</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Spotify</a></li>
+          </ul>
+        </section>
+      </section>
     </main>
-    <footer>2023</footer>
   </body>
 </html>
