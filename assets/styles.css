@@ -26,6 +26,11 @@ nav {
   margin-bottom: 5px;
 }
 
+nav h2 {
+  padding: 0px 25px;
+  color: var(--darker);
+}
+
 .nav-ul {
   display: flex;
   flex-wrap: wrap;
@@ -49,16 +54,25 @@ nav {
   text-decoration: none;
 }
 
-/* Formatting the subtitle section */
+/* Formatting the hero section - Name and Picture*/
 
-section.subtitle {
+section.hero {
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: center;
   text-align: center;
 }
 
-.subtitle {
+.me {
+  max-width: 55%;
+  max-height: 55%;
+  /* object-fit: contain;
+  margin-right: 10px;
+  margin-bottom: 10px; */
+  border: solid 4px var(--extra-light);
+}
+
+.hero {
   background: url(https://images.unsplash.com/photo-1669447922465-5bad4d25fcf2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=80);
   border: solid 5px var(--extra-light);
   margin-bottom: 5px;
@@ -69,36 +83,30 @@ h1 {
   color: var(--darker);
   background-color: var(--extra-light);
   width: 300px;
+  height: 50px;
   padding-bottom: 5px;
   font-size: 40px;
   font-family: var(--font-fam-1);
   text-shadow: 1px 1px 1px rgb(22, 22, 22);
 }
 
-section .me {
-  width: 200px;
-  height: 220px;
-  object-fit: contain;
-  margin-right: 10px;
-  margin-bottom: 10px;
-  border: solid 4px var(--extra-light);
-}
+/* Formatting the main content - About me, Work, and Contact Me */
 
-/* Formatting the main content */
-
-.flexbox-container {
+/* Main flexbox container */
+.main-container {
   display: flex;
   flex-wrap: wrap;
-  margin: 5px 150px;
+  margin: 5px 160px;
 }
 
+/* Flexbox for about me paragraph text */
 .flexbox-item {
   color: var(--darker);
   margin: 5px;
   font-size: 16px;
-  /* background-color: red; */
 }
 
+/* Flexbox hosting work projects */
 .flexbox-item-work {
   display: flex;
   flex-wrap: wrap;
@@ -108,6 +116,16 @@ section .me {
   font-size: 16px;
 }
 
+/* Work project caption formatting */
+h3 {
+  font-family: var(--font-fam-2);
+  background-color: var(--darker);
+  color: var(--extra-light);
+  padding: 8px;
+  position: relative;
+}
+
+/* Main formatting for current work image */
 .project-main {
   background: url(https://images.unsplash.com/photo-1534972195531-d756b9bfa9f2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fGNvZGV8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60);
   background-repeat: no-repeat;
@@ -120,11 +138,11 @@ section .me {
   justify-content: center;
   align-items: center;
   border: 4px solid var(--darker);
-  /* background-color: red; */
   padding: 5px;
   margin: 5px 5px;
 }
 
+/* Formatting for smaller, side projects not as the focus */
 .project-side {
   display: flex;
   flex: 1 1 500px;
@@ -139,6 +157,7 @@ section .me {
   margin: 5px 5px;
 }
 
+/* Background images for side projects */
 #htmlcss {
   background: url(https://images.unsplash.com/photo-1669023414171-56f0740e34cd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=80);
   background-position: center;
@@ -163,58 +182,71 @@ section .me {
   background-repeat: no-repeat;
 }
 
-.flexbox-item-1 {
+/* Side bar title formatting */
+.title {
   padding-right: 5px;
   flex: 1 1;
   font-size: 66px;
   border-right: solid var(--darker) 4px;
 }
-.flexbox-item-1 h2 {
+.title h2 {
   display: flex;
   align-items: flex-end;
   justify-content: flex-end;
   padding-right: 5px;
-  /* flex-wrap: wrap; */
   font-size: 55px;
   color: var(--darker);
   text-shadow: 1px 1px 1px rgb(22, 22, 22);
   font-family: var(--font-fam-2);
 }
 
-.flexbox-item-2 {
+.body-content {
   text-align: left;
   padding-left: 5px;
   flex: 3 1;
 }
 
-.flexbox-item-2 ul {
+.body-content ul {
   display: flex;
+  /* flex: 1 1; */
   align-items: center;
   flex-wrap: wrap;
   justify-content: space-between;
   list-style-type: none;
-  padding-right: 5px;
 }
 
-.flexbox-item-2 a {
+.body-content a {
   color: var(--darker);
   font-family: var(--font-fam-2);
   text-decoration: none;
   font-size: 25px;
+  margin: 20px;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1200px) {
   nav,
+  .hero,
   main,
   footer,
   main,
-  .flexbox-container {
+  .main-container {
     flex-direction: column;
     align-items: center;
-    margin: 10px;
+    margin: 5px;
+    font-size: 16px;
   }
-  .flexbox-item-1 {
+  .title {
     border-bottom: solid var(--darker) 4px;
     border-right: none;
+  }
+
+  .body-content a {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 524px) {
+  h1 {
+    height: 100px;
   }
 }
