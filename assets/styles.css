@@ -28,31 +28,23 @@ nav {
 
 .nav-ul {
   display: flex;
+  flex-wrap: wrap;
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
 .nav-link {
-  display: inline-block;
+  display: inline-flex;
+  flex-wrap: wrap;
   text-align: center;
   padding: 0px 25px;
   text-decoration: none;
 }
 
 .nav-link a {
-  display: inline-block;
-  color: var(--darker);
-  text-decoration: none;
-}
-
-.name {
-  display: flex;
-  text-align: center;
-  padding: 0px 25px;
-}
-
-.name a {
+  flex-wrap: wrap;
+  display: inline-flex;
   color: var(--darker);
   text-decoration: none;
 }
@@ -67,7 +59,6 @@ section.subtitle {
 }
 
 .subtitle {
-  /* background-color: gray; */
   background: url(https://images.unsplash.com/photo-1669447922465-5bad4d25fcf2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=80);
   border: solid 5px var(--extra-light);
   margin-bottom: 5px;
@@ -95,18 +86,17 @@ section .me {
 
 /* Formatting the main content */
 
-main {
-}
-
 .flexbox-container {
   display: flex;
-  margin: 0 150px;
+  flex-wrap: wrap;
+  margin: 5px 150px;
 }
 
 .flexbox-item {
   color: var(--darker);
   margin: 5px;
   font-size: 16px;
+  /* background-color: red; */
 }
 
 .flexbox-item-work {
@@ -150,6 +140,9 @@ main {
 }
 
 #htmlcss {
+  background: url(https://images.unsplash.com/photo-1669023414171-56f0740e34cd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=80);
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 #pc {
@@ -159,9 +152,15 @@ main {
 }
 
 #networking {
+  background: url(https://images.unsplash.com/photo-1544197150-b99a580bb7a8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 #projects {
+  background: url(https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1174&q=80);
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .flexbox-item-1 {
@@ -191,6 +190,7 @@ main {
 .flexbox-item-2 ul {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   justify-content: space-between;
   list-style-type: none;
   padding-right: 5px;
@@ -203,9 +203,18 @@ main {
   font-size: 25px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1000px) {
   nav,
-  nav.ul {
+  main,
+  footer,
+  main,
+  .flexbox-container {
     flex-direction: column;
+    align-items: center;
+    margin: 10px;
+  }
+  .flexbox-item-1 {
+    border-bottom: solid var(--darker) 4px;
+    border-right: none;
   }
 }
