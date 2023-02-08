@@ -1,8 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo+2&family=Orbitron:wght@500&display=swap");
+
 * {
   box-sizing: border-box;
 }
 
 :root {
+  --extra-light: #eee3cb;
+  --light: #d7c0ae;
+  --medium: #b7c4cf;
+  --dark: #967e76;
+  --darker: #65647c;
+  --font-fam-1: "Orbitron", sans-serif;
+  --font-fam-2: "Exo 2", sans-serif;
 }
 
 /* Navbar formatting */
@@ -10,6 +19,11 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-size: 25px;
+  font-weight: bold;
+  font-family: var(--font-fam-2);
+  background-color: var(--light);
+  margin-bottom: 5px;
 }
 
 .nav-ul {
@@ -18,11 +32,6 @@ nav {
   margin: 0;
   padding: 0;
 }
-
-/* .name {
-  display: inline-block;
-  color: #238637;
-} */
 
 .nav-link {
   display: inline-block;
@@ -33,7 +42,7 @@ nav {
 
 .nav-link a {
   display: inline-block;
-  color: #238637;
+  color: var(--darker);
   text-decoration: none;
 }
 
@@ -44,15 +53,44 @@ nav {
 }
 
 .name a {
-  color: #238637;
+  color: var(--darker);
   text-decoration: none;
 }
 
+/* Formatting the subtitle section */
+
+section.subtitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  text-align: center;
+}
+
 .subtitle {
-  background-color: gray;
-  text-align: end;
+  /* background-color: gray; */
+  background: url(https://images.unsplash.com/photo-1669447922465-5bad4d25fcf2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=80);
+  border: solid 5px var(--extra-light);
   margin-bottom: 5px;
-  line-height: 200px;
+  height: 250px;
+}
+
+h1 {
+  color: var(--darker);
+  background-color: var(--extra-light);
+  width: 300px;
+  padding-bottom: 5px;
+  font-size: 40px;
+  font-family: var(--font-fam-1);
+  text-shadow: 1px 1px 1px rgb(22, 22, 22);
+}
+
+section img {
+  width: 200px;
+  height: 220px;
+  object-fit: contain;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border: solid 4px var(--extra-light);
 }
 
 /* Formatting the main content */
@@ -62,23 +100,19 @@ main {
 
 .flexbox-container {
   display: flex;
-  background-color: gray;
   margin: 0 150px;
 }
 
 .flexbox-item {
-  background-color: blue;
-  color: white;
+  color: var(--darker);
   margin: 5px;
   line-height: 25px;
   font-size: 16px;
-  border-right: white 3px;
 }
 
 .flexbox-item-work {
   display: flex;
   flex-wrap: wrap;
-  background-color: lightblue;
   color: white;
   margin: 5px;
   line-height: 25px;
@@ -96,8 +130,8 @@ main {
   height: 700px;
   justify-content: center;
   align-items: center;
-  border: 3px solid black;
-  background-color: red;
+  border: 4px solid var(--darker);
+  /* background-color: red; */
   padding: 5px;
   margin: 5px 5px;
 }
@@ -110,6 +144,7 @@ main {
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
+  border: 4px solid var(--darker);
   background-color: green;
 
   padding: 5px;
@@ -120,22 +155,24 @@ main {
   padding-right: 5px;
   flex: 1 1;
   font-size: 66px;
-  border-right: white 3px;
+  border-right: solid var(--darker) 4px;
 }
 .flexbox-item-1 h2 {
   display: flex;
   align-items: flex-end;
+  justify-content: flex-end;
   padding-right: 5px;
   flex-wrap: wrap;
-  font-size: 66px;
-  border-right: white 3px;
+  font-size: 55px;
+  color: var(--darker);
+  text-shadow: 1px 1px 1px rgb(22, 22, 22);
+  font-family: var(--font-fam-1);
 }
 
 .flexbox-item-2 {
   text-align: left;
   padding-left: 5px;
   flex: 3 1;
-  border-right: white 3px;
 }
 
 .flexbox-item-2 ul {
@@ -147,6 +184,8 @@ main {
 }
 
 .flexbox-item-2 a {
-  color: white;
+  color: var(--darker);
+  font-family: var(--font-fam-2);
   text-decoration: none;
+  font-size: 25px;
 }
