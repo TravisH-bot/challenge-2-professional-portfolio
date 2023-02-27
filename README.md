@@ -13,3 +13,7 @@
 
 - What did you learn?
   I have learned a great deal about Flexbox and it's many nuances and the importance of positioning elements correctly. I have also learned the challenges of addressing site responsiveness and the importance of media queries when viewing a sites content through various view ports.
+
+![image](https://user-images.githubusercontent.com/79767820/217692569-ce02703a-7b89-47c7-9129-240837a16511.png)
+
+Deployed Applicatoin: https://travish-bot.github.io/challenge-2-professional-portfolio/
