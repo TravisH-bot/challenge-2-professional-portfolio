@@ -1,117 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./assets/styles.css" />
-    <title>Professional Portfolio</title>
-  </head>
-  <body>
-    <!-- Navbar  -->
-    <header>
-      <nav>
-        <div><h2>Travis Hackbarth</h2></div>
-        <ul class="nav-ul">
-          <li class="nav-link"><a href="#about-me">About Me</a></li>
-          <li class="nav-link"><a href="#work">Work</a></li>
-          <li class="nav-link"><a href="#contact-me">Contact Me</a></li>
-          <li class="nav-link">
-            <a
-              href="./assets/files/Travis Hackbarth Resume 2023.pdf"
-              download="Travis Hackbarth Resume 2023"
-              target="_blank"
-              >Resume</a
-            >
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <!-- hero section containing name and profile picture -->
-    <section class="hero">
-      <h1>My Portfolio</h1>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./assets/styles.css" />
+  <title>Professional Portfolio</title>
+</head>
+
+<body>
+  <!-- Navbar  -->
+  <header>
+    <nav>
       <div>
-        <img class="me" src="./assets/images/me.png" alt="me" />
+        <h2>Travis Hackbarth</h2>
       </div>
+      <ul class="nav-ul">
+        <li class="nav-link"><a href="#about-me">About Me</a></li>
+        <li class="nav-link"><a href="#work">Work</a></li>
+        <li class="nav-link"><a href="#contact-me">Contact Me</a></li>
+        <li class="nav-link">
+          <a href="./assets/files/Travis Hackbarth Resume 2023.pdf" download="Travis Hackbarth Resume 2023"
+            target="_blank">Resume</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <!-- hero section containing name and profile picture -->
+  <section class="hero">
+    <h1>My Portfolio</h1>
+    <div>
+      <img class="me" src="./assets/images/me.png" alt="me" />
+    </div>
+  </section>
+  <!-- Main section containing titles and sections for about me, work, and contact info -->
+  <main>
+    <!-- About Me -->
+    <section class="main-container">
+      <section id="about-me" class="flexbox-item title">
+        <h2>About Me</h2>
+      </section>
+      <section class="flexbox-item body-content">
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio
+          at voluptates maxime voluptas id facere aliquid quidem reiciendis
+          veniam veritatis iusto molestias praesentium culpa sint non unde
+          consequatur, quia earum ullam fugiat consequuntur est quibusdam
+          eveniet pariatur!
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae amet
+          quam nulla, perferendis nisi provident eum consequuntur iure,
+          deleniti porro quibusdam consectetur eveniet dolor deserunt. Error
+          placeat laudantium tempore sapiente eum nam dolores id delectus
+          natus commodi, veritatis beatae magni voluptate doloremque officia
+          vel modi quam repellendus omnis cumque suscipit?
+        </p>
+      </section>
     </section>
-    <!-- Main section containing titles and sections for about me, work, and contact info -->
-    <main>
-      <!-- About Me -->
-      <section class="main-container">
-        <section id="about-me" class="flexbox-item title">
-          <h2>About Me</h2>
+    <!-- Work - mostly placeholders until I am further along in the bootcamp -->
+    <section class="main-container">
+      <section id="work" class="flexbox-item title">
+        <h2>Work</h2>
+      </section>
+
+      <section class="flexbox-item-work body-content">
+        <section class="project-main">
+          <h3>Coding</h3>
         </section>
+        <section id="htmlcss" class="project-side">
+          <a href="https://travish-bot.github.io/CSS-snippet-cheatsheet/" target="_blank">
+            <h3>HTML/CSS Effects</h3>
+          </a>
+        </section>
+        <section id="pc" class="project-side">
+          <h3>PC Building</h3>
+        </section>
+        <section id="networking" class="project-side">
+          <h3>Networking</h3>
+        </section>
+        <section id="projects" class="project-side">
+          <h3>Coding</h3>
+        </section>
+      </section>
+    </section>
+    <!-- Contact Me -->
+    <footer>
+      <section class="main-container">
+        <section id="contact-me" class="flexbox-item title">
+          <h2>Contact Me</h2>
+        </section>
+
         <section class="flexbox-item body-content">
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio
-            at voluptates maxime voluptas id facere aliquid quidem reiciendis
-            veniam veritatis iusto molestias praesentium culpa sint non unde
-            consequatur, quia earum ullam fugiat consequuntur est quibusdam
-            eveniet pariatur!
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae amet
-            quam nulla, perferendis nisi provident eum consequuntur iure,
-            deleniti porro quibusdam consectetur eveniet dolor deserunt. Error
-            placeat laudantium tempore sapiente eum nam dolores id delectus
-            natus commodi, veritatis beatae magni voluptate doloremque officia
-            vel modi quam repellendus omnis cumque suscipit?
-          </p>
+          <ul>
+            <li><a href="#">Phone Number</a></li>
+            <li><a href="#">Email</a></li>
+            <li><a href="https://github.com/" target="_blank">GitHub</a></li>
+            <li>
+              <a href="https://twitter.com/" target="_blank">Twitter</a>
+            </li>
+            <li>
+              <a href="https://open.spotify.com/user/travishackbarth?si=dfffa376a5414627" target="_blank">Spotify</a>
+            </li>
+          </ul>
         </section>
       </section>
-      <!-- Work - mostly placeholders until I am further along in the bootcamp -->
-      <section class="main-container">
-        <section id="work" class="flexbox-item title">
-          <h2>Work</h2>
-        </section>
+    </footer>
+  </main>
+</body>
 
-        <section class="flexbox-item-work body-content">
-          <section class="project-main"><h3>Coding</h3></section>
-          <section id="htmlcss" class="project-side">
-            <a
-              href="https://travish-bot.github.io/CSS-snippet-cheatsheet/"
-              target="_blank"
-            >
-              <h3>HTML/CSS Effects</h3></a
-            >
-          </section>
-          <section id="pc" class="project-side">
-            <h3>PC Building</h3>
-          </section>
-          <section id="networking" class="project-side">
-            <h3>Networking</h3>
-          </section>
-          <section id="projects" class="project-side">
-            <h3>Projects</h3>
-          </section>
-        </section>
-      </section>
-      <!-- Contact Me -->
-      <footer>
-        <section class="main-container">
-          <section id="contact-me" class="flexbox-item title">
-            <h2>Contact Me</h2>
-          </section>
-
-          <section class="flexbox-item body-content">
-            <ul>
-              <li><a href="#">Phone Number</a></li>
-              <li><a href="#">Email</a></li>
-              <li><a href="https://github.com/" target="_blank">GitHub</a></li>
-              <li>
-                <a href="https://twitter.com/" target="_blank">Twitter</a>
-              </li>
-              <li>
-                <a
-                  href="https://open.spotify.com/user/travishackbarth?si=dfffa376a5414627"
-                  target="_blank"
-                  >Spotify</a
-                >
-              </li>
-            </ul>
-          </section>
-        </section>
-      </footer>
-    </main>
-  </body>
 </html>
