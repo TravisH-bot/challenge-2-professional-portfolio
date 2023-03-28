@@ -131,7 +131,7 @@ h3 {
 
 /* Main formatting for current work image */
 .project-main {
-  background: url(https://i.imgur.com/xDnc90h.png);
+  background: url(./images/fluffy-2.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -176,10 +176,19 @@ h3 {
 }
 
 /* Background images for side projects */
+
+#philanthropic-cocktails {
+  background: url(./images/philanthropiccocktails.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 #htmlcss {
   background: url(./images/css-cheatsheet.png);
   background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #pc {
